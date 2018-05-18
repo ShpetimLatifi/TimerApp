@@ -3,7 +3,7 @@ import javax.swing.JOptionPane;
 public class TimerAppMod {
     public void countDown() {
         String input = JOptionPane.showInputDialog("Input the minutes that will be counted down");
-        if (input == null||input.equal("")) {
+        if (input == null||input.equals("")) {
             throw new RuntimeException("Please give an input");
         }
         int minutes = Integer.parseInt(input);
