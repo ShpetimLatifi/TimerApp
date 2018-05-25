@@ -51,14 +51,14 @@ public class TimerApp extends JPanel {
         else
             seconds = "" + transformedSec;
         if (transformedMin >= 10 && transformedMin<= 60)
-            hours = "" + transformedMin;
+            minutes = "" + transformedMin;
         else
-            hours = "0" + transformedMin;
+            minutes = "0" + transformedMin;
         if (hour < 10)
-            minutes = "0" + hour;
+            hours = "0" + hour;
         else
-            minutes = "" + hour;
-        g.drawString(minutes + ":" + hours + ":" + seconds, 150, 250);
+            hours = "" + hour;
+        g.drawString(hours + ":" + minutes + ":" + seconds, 150, 250);
         this.repaint();
     }
 
